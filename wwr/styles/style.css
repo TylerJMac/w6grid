@@ -192,6 +192,19 @@ h4 {
     grid-row: 5/8;
     box-shadow: 5px 5px 10px #6f7364;
 }
+#paged {
+    line-height: 1.5em;
+    background-color: rgb(21, 231, 246);
+    color: rgba(0, 200, 255, 0.7);
+    padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+#scorpion-box {
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
 /* never put code beyond this point */
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
