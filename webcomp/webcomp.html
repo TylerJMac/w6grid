@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: #464D77;
+  overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+<h2>Web Content: Accordion</h2>
+
+<button class="accordion">Section 1</button>
+<div class="panel">
+  <p>This was an interesting web compenent to learn, and am happy with how it turned out</p>
+</div>
+
+<button class="accordion">Section 2</button>
+<div class="panel">
+  <p>The Javascript worried me a bit, but in the end, it seems fine</p>
+</div>
+
+<button class="accordion">Section 3</button>
+<div class="panel">
+  <p>Fun Fact: Octopuses also have three hearts: two just to pump blood through the gills and one more to circulate it to the organs. The circulating heart stops beating while an octopus swims, which explains why these cephalopods prefer crawling: Swimming exhausts them.</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>

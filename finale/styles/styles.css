@@ -1,0 +1,20 @@
+header {
+    padding: 1em;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 150px auto;
+    background-color:hsl(132, 100%, 17%);
+    color: #CA0000;
+}
+.home-gridz {
+    padding: 1em;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 150px auto;
+  background-color:hsl(132, 100%, 17%);
+  color: #CA0000;
+}
+#card.img {
+    margin: 200px 0;
+}
+
