@@ -1,20 +1,97 @@
+
 header {
-    padding: 1em;
     text-align: center;
-    display: grid;
-    grid-template-columns: 150px auto;
-    background-color:hsl(132, 100%, 17%);
-    color: #CA0000;
+    background-color: #CA0000;
+    font-family:"Lucida Console";
+    font-size: medium;
+    color: #756f6f;
+}
+body {
+    background-color: black;
+}
+nav a {
+    color: black;  
+}
+.logo {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    border: 10px solid #CA0000;
+}
+.logo:hover {
+        opacity: 0.6;
+        transform: scale(1.025);
+}
+.links {
+    text-align: center;
+    background-color: #CA0000;
+}
+#hero-msg {
+    text-align: center;
+    color:aliceblue;
+    font-family:"Lucida Console";
 }
 .home-gridz {
-    padding: 1em;
-  text-align: center;
-  display: grid;
-  grid-template-columns: 150px auto;
-  background-color:hsl(132, 100%, 17%);
-  color: #CA0000;
+   display:grid;
+   grid-template-columns:1fr 1fr;
+   grid-gap: 50px;
+   text-align: center;
 }
-#card.img {
-    margin: 200px 0;
+.card-img {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width: 600px;
+    height: 500px;
 }
 
+.subcard-img {
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 50px;
+    border: 10px solid #464D77;
+}
+.info1-card {
+    background-color: #464D77;
+}
+.info2-card {
+    background-color: #464D77;
+}
+footer {
+    background-color: rgba(34, 123, 56, 0.7);
+    color: rgba(0, 0, 0, 0.7);
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Garamond";
+}
+footer p {
+    font-size: 1.2em;
+    font-family: "Garamond";
+    
+}    
+footer p a:hover {
+    text-decoration: underline;
+    font-family: "Garamond";
+}    
+footer a {
+    color: rgba(0, 0, 0, 0.7);
+    text-decoration: underline;
+    font-family: "Garamond";
+
+}
+footer a:hover {
+    color: rgba(0, 0, 0, 0.7);
+    font-family: "Garamond";
+
+}
+footer .social img {
+    padding-top: 15px;
+}
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}
